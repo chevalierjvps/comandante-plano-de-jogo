@@ -1,0 +1,3845 @@
+{
+  "1": [
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 14
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "ritmo": "furtivo"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 7,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "ritmo": "furtivo"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "fatiar",
+            "ang": -90
+          }
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "fatiar",
+            "ang": -100
+          }
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -110
+          }
+        }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "fatiar",
+            "ang": -90
+          }
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -120
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -140
+          }
+        }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 2.5
+          }
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -60
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -120
+          }
+        }
+      ]
+    }
+  ],
+  "6": [
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 8,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 2.5
+          }
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -60
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 7,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -110
+          }
+        }
+      ]
+    }
+  ],
+  "7": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "x": 5,
+            "y": 2
+          }
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 5,
+          "y": 1,
+          "ritmo": "andar"
+        },
+        {
+          "x": 9,
+          "y": 14,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 8,
+          "y": 2,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 9,
+          "y": 14,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 4,
+          "y": 11,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": 0
+          }
+        }
+      ]
+    }
+  ],
+  "8": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "x": 4,
+            "y": 2
+          }
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -75
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 6,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 14
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "x": 7,
+            "y": 2
+          }
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -105
+          }
+        }
+      ]
+    }
+  ],
+  "9": [
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 14
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -110,
+            "dist": 3.5
+          }
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -135
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 6,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 8,
+          "y": 14
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -70,
+            "dist": 3.5
+          }
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -45
+          }
+        }
+      ]
+    }
+  ],
+  "10": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "ritmo": "furtivo"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 6,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "ritmo": "furtivo"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 14
+        },
+        {
+          "x": 8,
+          "y": 3,
+          "ritmo": "furtivo"
+        }
+      ]
+    }
+  ],
+  "11": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 4
+          }
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70,
+            "s": 3.5
+          }
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "ritmo": "andar"
+        },
+        {
+          "x": 9,
+          "y": 14,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -110
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14,
+          "ordem": {
+            "t": "segurar",
+            "ang": 90
+          }
+        }
+      ]
+    }
+  ],
+  "12": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "x": 5,
+            "y": 2
+          }
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70,
+            "s": 3
+          }
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "ritmo": "andar"
+        },
+        {
+          "x": 9,
+          "y": 14,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "x": 7,
+            "y": 2
+          }
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -110
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 8,
+          "y": 9,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": 45
+          }
+        }
+      ]
+    }
+  ],
+  "13": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3
+          }
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -110
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": 90
+          }
+        }
+      ]
+    }
+  ],
+  "14": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 4,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 3,
+            "pt": 1
+          }
+        },
+        {
+          "x": 4,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 4
+          }
+        },
+        {
+          "x": 2,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 10,
+          "y": 5,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": 180,
+            "dist": 4
+          }
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -130
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 14
+        },
+        {
+          "x": 10,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -120
+          }
+        }
+      ]
+    }
+  ],
+  "15": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 5,
+            "y": 3
+          }
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 7,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 14
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "16": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 6,
+            "y": 2.5
+          }
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3
+          }
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -110
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ],
+      "socorrer": true
+    }
+  ],
+  "17": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3.5
+          }
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": 0
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 9,
+          "y": 2,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": 180
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "taser"
+          }
+        },
+        {
+          "x": 5,
+          "y": 2,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "ritmo": "andar"
+        }
+      ]
+    }
+  ],
+  "18": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 14
+        },
+        {
+          "x": 5,
+          "y": 13,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 5,
+            "y": 9
+          }
+        },
+        {
+          "x": 5,
+          "y": 9,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "impacto",
+            "x": 5,
+            "y": 5
+          }
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 4
+          }
+        },
+        {
+          "x": 2,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 14
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 3
+          }
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -110
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 14
+        },
+        {
+          "x": 4,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 3
+          }
+        },
+        {
+          "x": 5,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 14,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "19": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 5,
+            "y": 4
+          }
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 4
+          }
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -75
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 18
+        },
+        {
+          "x": 7,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -105
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 11,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "20": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 6,
+            "y": 3
+          }
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 4
+          }
+        },
+        {
+          "x": 3,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -75
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 18
+        },
+        {
+          "x": 7,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 9,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -105
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 6,
+          "y": 5,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 11,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "21": [
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 8,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 3,
+            "y": 1
+          }
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 18
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 10,
+            "y": 1
+          }
+        },
+        {
+          "x": 10,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 11,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 14,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "22": [
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 6,
+            "y": 3
+          }
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3.5
+          }
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -75
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -105
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 6,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 8,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 7,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "23": [
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 6,
+            "y": 3
+          }
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3.5
+          }
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "ritmo": "andar"
+        },
+        {
+          "x": 11,
+          "y": 18,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -75,
+            "s": 5
+          }
+        },
+        {
+          "x": 11,
+          "y": 18,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 6,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -105,
+            "s": 5
+          }
+        },
+        {
+          "x": 11,
+          "y": 18,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 8,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 12,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": 0
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 13,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": 0
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 13,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": 0
+          }
+        }
+      ]
+    }
+  ],
+  "24": [
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 8,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 8,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 6,
+          "y": 18
+        },
+        {
+          "x": 7,
+          "y": 8,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 8,
+          "y": 18
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 9,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18
+        },
+        {
+          "x": 7,
+          "y": 9,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "25": [
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 5,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "lanterna",
+            "liga": true
+          }
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "lanterna",
+            "liga": false
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18
+        },
+        {
+          "x": 8,
+          "y": 5,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 10,
+          "y": 2,
+          "ritmo": "furtivo"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 6,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 8,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "26": [
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 6,
+            "y": 3
+          }
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3
+          }
+        },
+        {
+          "x": 3,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -75
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 9,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -105
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 6,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 6,
+          "y": 3,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 8,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "27": [
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 3,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18
+        },
+        {
+          "x": 4,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -85
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 6,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 10,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -75
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 8,
+          "y": 18
+        },
+        {
+          "x": 8,
+          "y": 10,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -105
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18
+        },
+        {
+          "x": 9,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": -95
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "28": [
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 10,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 5,
+            "y": 6
+          }
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "impacto",
+            "x": 3,
+            "y": 2
+          }
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": 90,
+            "s": 8
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18
+        },
+        {
+          "x": 7,
+          "y": 10,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 8,
+            "y": 6
+          }
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "impacto",
+            "x": 10,
+            "y": 2
+          }
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 6,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 8,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "29": [
+    {
+      "pts": [
+        {
+          "x": 1,
+          "y": 18
+        },
+        {
+          "x": 3,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3
+          }
+        },
+        {
+          "x": 1,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70,
+            "s": 3
+          }
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "ritmo": "andar"
+        },
+        {
+          "x": 6,
+          "y": 18,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 18
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -110
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 18
+        },
+        {
+          "x": 10,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3
+          }
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 11,
+          "y": 18
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 5,
+            "pt": 1
+          }
+        },
+        {
+          "x": 10,
+          "y": 2,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "taser"
+          }
+        },
+        {
+          "x": 10,
+          "y": 1,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18
+        },
+        {
+          "x": 11,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 5,
+            "pt": 1
+          }
+        },
+        {
+          "x": 12,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -110
+          }
+        }
+      ]
+    }
+  ],
+  "30": [
+    {
+      "pts": [
+        {
+          "x": 1,
+          "y": 18
+        },
+        {
+          "x": 3,
+          "y": 7,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 3,
+          "y": 2,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 6,
+          "y": 18,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 18
+        },
+        {
+          "x": 10,
+          "y": 7,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 10,
+          "y": 2,
+          "ritmo": "furtivo"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 5,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 7,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 11,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "31": [
+    {
+      "pts": [
+        {
+          "x": 1,
+          "y": 18
+        },
+        {
+          "x": 3,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 3,
+            "y": 2
+          }
+        },
+        {
+          "x": 3,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3
+          }
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -80
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -100
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 18
+        },
+        {
+          "x": 10,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 10,
+            "y": 2
+          }
+        },
+        {
+          "x": 10,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3
+          }
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -80
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18
+        },
+        {
+          "x": 11,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 5,
+            "pt": 2
+          }
+        },
+        {
+          "x": 12,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -100
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 11,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "32": [
+    {
+      "pts": [
+        {
+          "x": 1,
+          "y": 18
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 6,
+            "y": 1.5
+          }
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3.5
+          }
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -75
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -105
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 2
+          }
+        },
+        {
+          "x": 6,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 18
+        },
+        {
+          "x": 4,
+          "y": 12,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": 0
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18
+        },
+        {
+          "x": 4,
+          "y": 13,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "segurar",
+            "ang": 0
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 11,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 13,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": 0
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "33": [
+    {
+      "pts": [
+        {
+          "x": 1,
+          "y": 18
+        },
+        {
+          "x": 2,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 3,
+            "y": 6
+          }
+        },
+        {
+          "x": 2,
+          "y": 4,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 3,
+            "y": 2
+          }
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -80
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 11,
+          "y": 8,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 10,
+            "y": 6
+          }
+        },
+        {
+          "x": 11,
+          "y": 4,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 10,
+            "y": 2
+          }
+        },
+        {
+          "x": 10,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -100
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 11,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "34": [
+    {
+      "pts": [
+        {
+          "x": 1,
+          "y": 18
+        },
+        {
+          "x": 3,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "impacto",
+            "x": 3,
+            "y": 2.5
+          }
+        },
+        {
+          "x": 3,
+          "y": 1,
+          "ritmo": "andar"
+        },
+        {
+          "x": 6,
+          "y": 18,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 4,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3
+          }
+        },
+        {
+          "x": 4,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -90,
+            "s": 4
+          }
+        },
+        {
+          "x": 6,
+          "y": 18,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 18
+        },
+        {
+          "x": 10,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "ang": -90,
+            "dist": 3.5
+          }
+        },
+        {
+          "x": 8,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70,
+            "s": 3
+          }
+        },
+        {
+          "x": 10,
+          "y": 1,
+          "ritmo": "andar"
+        },
+        {
+          "x": 7,
+          "y": 18,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18
+        },
+        {
+          "x": 11,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 5,
+            "pt": 1
+          }
+        },
+        {
+          "x": 12,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -110
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 11,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "35": [
+    {
+      "pts": [
+        {
+          "x": 1,
+          "y": 18
+        },
+        {
+          "x": 3,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "x": 6,
+            "y": 2.5
+          }
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": 0
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 4,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "taser"
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 18
+        },
+        {
+          "x": 2,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 1,
+            "pt": 1
+          }
+        },
+        {
+          "x": 3,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -70
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 18
+        },
+        {
+          "x": 10,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "x": 7,
+            "y": 2.5
+          }
+        },
+        {
+          "x": 11,
+          "y": 2,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": 180
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18
+        },
+        {
+          "x": 11,
+          "y": 7,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 5,
+            "pt": 1
+          }
+        },
+        {
+          "x": 9,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": -110
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 11,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ],
+  "36": [
+    {
+      "pts": [
+        {
+          "x": 1,
+          "y": 18
+        },
+        {
+          "x": 3,
+          "y": 7,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 6,
+          "y": 18,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 2,
+          "y": 18
+        },
+        {
+          "x": 10,
+          "y": 7,
+          "ritmo": "furtivo"
+        },
+        {
+          "x": 6,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "luz",
+            "x": 6,
+            "y": 2
+          }
+        },
+        {
+          "x": 6,
+          "y": 2,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "taser"
+          }
+        },
+        {
+          "x": 6,
+          "y": 1,
+          "ritmo": "andar"
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 3,
+          "y": 18
+        },
+        {
+          "x": 5,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 2,
+            "pt": 2
+          }
+        },
+        {
+          "x": 5,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "impacto",
+            "x": 3,
+            "y": 2
+          }
+        },
+        {
+          "x": 2,
+          "y": 2,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": 0
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 4,
+          "y": 18
+        },
+        {
+          "x": 7,
+          "y": 6,
+          "ritmo": "furtivo",
+          "ordem": {
+            "t": "sinal",
+            "de": 2,
+            "pt": 2
+          }
+        },
+        {
+          "x": 7,
+          "y": 4,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "impacto",
+            "x": 10,
+            "y": 2
+          }
+        },
+        {
+          "x": 11,
+          "y": 2,
+          "ritmo": "andar",
+          "ordem": {
+            "t": "segurar",
+            "ang": 180
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 9,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 10,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 11,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    },
+    {
+      "pts": [
+        {
+          "x": 12,
+          "y": 18,
+          "ordem": {
+            "t": "segurar",
+            "ang": -90
+          }
+        }
+      ]
+    }
+  ]
+}

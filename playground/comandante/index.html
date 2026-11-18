@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="escuro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Comandante: Plano de Jogo · StrikeZone Tático</title>
+  <style>
+    :root {
+      --bg-primario: #0d1217;
+      --bg-secundario: #151d24;
+      --bg-card: #1b252f;
+      --bg-elevado: #222f3c;
+      --texto-principal: #f1f5f9;
+      --texto-secundario: #cbd5e1;
+      --texto-suave: #94a3b8;
+      --borda: #2e3e4e;
+      --acento: #f59e0b;
+      --acento-forte: #d97706;
+      --acento-texto: #090d11;
+      --aliado: #10b981;
+      --perigo: #ef4444;
+      --aviso: #eab308;
+      --foco: #38bdf8;
+    }
+
+    html[data-tema="claro"] {
+      --bg-primario: #f1f5f9;
+      --bg-secundario: #e2e8f0;
+      --bg-card: #ffffff;
+      --bg-elevado: #f8fafc;
+      --texto-principal: #0f172a;
+      --texto-secundario: #1e293b;
+      --texto-suave: #475569;
+      --borda: #cbd5e1;
+      --acento: #b45309;
+      --acento-forte: #92400e;
+      --acento-texto: #ffffff;
+      --aliado: #047857;
+      --perigo: #b91c1c;
+      --aviso: #a16207;
+      --foco: #0284c7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-primario);
+      color: var(--texto-principal);
+      min-height: 100dvh;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+      line-height: 1.4;
+    }
+
+    button, select, input {
+      font: inherit;
+      color: inherit;
+    }
+
+    button:focus-visible, select:focus-visible, input:focus-visible, [tabindex]:focus-visible {
+      outline: 3px solid var(--foco);
+      outline-offset: 2px;
+    }
+
+    .app-shell {
+      width: 100%;
+      max-width: 480px;
+      min-height: 100dvh;
+      background-color: var(--bg-primario);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      border-left: 1px solid var(--borda);
+      border-right: 1px solid var(--borda);
+    }
+
+    .tela {
+      display: none;
+      flex-direction: column;
+      flex: 1;
+      width: 100%;
+    }
+
+    .tela.ativa {
+      display: flex;
+    }
+
+    /* Botões padrão tático (mínimo 44px para toque) */
+    .btn {
+      min-height: 44px;
+      min-width: 44px;
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid var(--borda);
+      background-color: var(--bg-card);
+      color: var(--texto-principal);
+      font-weight: 700;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: background-color 0.15s, transform 0.1s;
+      user-select: none;
+    }
+
+    .btn:hover {
+      background-color: var(--bg-elevado);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
+
+    .btn-primario {
+      background-color: var(--acento);
+      color: var(--acento-texto);
+      border-color: var(--acento-forte);
+    }
+
+    .btn-primario:hover {
+      background-color: var(--acento-forte);
+      color: #ffffff;
+    }
+
+    .btn-executar {
+      background-color: var(--aliado);
+      color: #ffffff;
+      border-color: #059669;
+      font-size: 1rem;
+      letter-spacing: 0.03em;
+    }
+
+    .btn-executar:hover {
+      background-color: #059669;
+    }
+
+    .btn-perigo {
+      background-color: var(--perigo);
+      color: #ffffff;
+      border-color: #991b1b;
+    }
+
+    /* TELA MENU */
+    .topo-menu {
+      padding: 14px 16px;
+      background-color: var(--bg-secundario);
+      border-bottom: 1px solid var(--borda);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .topo-linha {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .marca-jogo {
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .sub-marca {
+      font-size: 0.8rem;
+      color: var(--texto-secundario);
+      font-weight: 600;
+    }
+
+    .painel-patente {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--bg-card);
+      border: 1px solid var(--borda);
+      border-radius: 6px;
+      padding: 8px 12px;
+      gap: 8px;
+    }
+
+    .patente-badge {
+      font-weight: 800;
+      color: var(--acento);
+      font-size: 0.92rem;
+    }
+
+    .contadores-estrelas {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: flex;
+      gap: 10px;
+    }
+
+    .destaque-proxima {
+      margin: 12px 16px 4px;
+      padding: 12px 14px;
+      background-color: var(--bg-card);
+      border: 2px solid var(--acento);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .tag-novo {
+      display: inline-block;
+      background-color: var(--acento);
+      color: var(--acento-texto);
+      font-weight: 800;
+      font-size: 0.76rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      width: fit-content;
+    }
+
+    .barra-modos-extras {
+      margin: 8px 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .lista-operacoes {
+      padding: 8px 16px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .bloco-op {
+      background-color: var(--bg-secundario);
+      border: 1px solid var(--borda);
+      border-radius: 8px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .cabecalho-op {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid var(--borda);
+      padding-bottom: 8px;
+    }
+
+    .retrato-mini {
+      width: 44px;
+      height: 44px;
+      border-radius: 6px;
+      border: 2px solid var(--borda);
+      flex-shrink: 0;
+      background-color: #14191f;
+    }
+
+    .titulo-op {
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .sub-op {
+      font-size: 0.78rem;
+      color: var(--texto-secundario);
+    }
+
+    .grade-missoes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .card-missao {
+      min-height: 62px;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid var(--borda);
+      background-color: var(--bg-card);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .card-missao:hover:not(:disabled) {
+      border-color: var(--acento);
+      background-color: var(--bg-elevado);
+    }
+
+    .card-missao:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+
+    .card-missao-topo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--texto-secundario);
+    }
+
+    .card-missao-nome {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--texto-principal);
+      margin-top: 2px;
+    }
+
+    .estrelas-txt {
+      color: var(--acento);
+      letter-spacing: 1px;
+      font-size: 0.85rem;
+    }
+
+    /* TELA BRIEF */
+    .corpo-brief {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+    }
+
+    .historia-box {
+      background-color: var(--bg-secundario);
+      border: 1px solid var(--borda);
+      border-radius: 8px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 0.95rem;
+    }
+
+    .grade-fichas {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    @media (max-width: 350px) {
+      .grade-fichas {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .ficha-card {
+      background-color: var(--bg-card);
+      border: 2px solid var(--borda);
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .ficha-card.cor-verde { border-color: var(--aliado); }
+    .ficha-card.cor-amarelo { border-color: var(--aviso); }
+    .ficha-card.cor-vermelho { border-color: var(--perigo); }
+    .ficha-card.cor-cinza { border-color: #64748b; }
+
+    .ficha-canvas {
+      width: 64px;
+      height: 64px;
+      border-radius: 6px;
+      flex-shrink: 0;
+      background-color: #14191f;
+    }
+
+    .ficha-nome {
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+
+    .ficha-desc {
+      font-size: 0.78rem;
+      color: var(--texto-secundario);
+      margin-top: 2px;
+    }
+
+    .faixa-objetivo {
+      background-color: var(--bg-elevado);
+      border: 1px solid var(--borda);
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .seletor-classes-box {
+      background-color: var(--bg-secundario);
+      border: 1px solid var(--borda);
+      border-radius: 8px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .linha-classe-op {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 0.85rem;
+    }
+
+    .linha-classe-op select {
+      min-height: 38px;
+      padding: 4px 8px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--borda);
+      border-radius: 4px;
+    }
+
+    /* TELA PLANEJAR E EXECUTAR */
+    .barra-topo-jogo {
+      padding: 8px 10px;
+      background-color: var(--bg-secundario);
+      border-bottom: 1px solid var(--borda);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    .info-missao-topo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .info-missao-titulo {
+      font-weight: 800;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+
+    .info-missao-sub {
+      font-size: 0.75rem;
+      color: var(--texto-secundario);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .palco-mapa {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #090d11;
+      border-bottom: 1px solid var(--borda);
+      touch-action: none;
+      user-select: none;
+    }
+
+    #canvas-mapa {
+      display: block;
+      width: 100%;
+      height: auto;
+      touch-action: none;
+    }
+
+    #canvas-lupa {
+      position: absolute;
+      width: 96px;
+      height: 96px;
+      border: 2px solid var(--acento);
+      border-radius: 50%;
+      background-color: #090d11;
+      pointer-events: none;
+      display: none;
+      z-index: 20;
+    }
+
+    .faixa-operadores-wrap {
+      padding: 6px 8px;
+      background-color: var(--bg-secundario);
+      border-bottom: 1px solid var(--borda);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .controles-equipe {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      font-size: 0.78rem;
+    }
+
+    .grade-operadores {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+    }
+
+    .btn-op {
+      min-height: 48px;
+      padding: 4px 6px;
+      border-radius: 6px;
+      border: 2px solid var(--borda);
+      background-color: var(--bg-card);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .btn-op.selecionado {
+      border-color: var(--acento);
+      background-color: var(--bg-elevado);
+    }
+
+    .btn-op-retr {
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      flex-shrink: 0;
+      background-color: #14191f;
+    }
+
+    .btn-op-txt {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .btn-op-nome {
+      font-weight: 800;
+      font-size: 0.76rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .btn-op-classe {
+      font-size: 0.68rem;
+      color: var(--texto-secundario);
+      text-transform: uppercase;
+    }
+
+    /* Gaveta da Linha do Tempo */
+    .gaveta-timeline {
+      background-color: var(--bg-secundario);
+      border-bottom: 1px solid var(--borda);
+      padding: 6px 10px;
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      max-height: 150px;
+      overflow-y: auto;
+    }
+
+    .gaveta-timeline.aberta {
+      display: flex;
+    }
+
+    .linha-tl {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.74rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .linha-tl-rotulo {
+      width: 52px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .linha-tl-barra {
+      flex: 1;
+      height: 18px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--borda);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tl-ponto {
+      position: absolute;
+      top: 2px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: var(--acento);
+      color: #000;
+      font-size: 0.6rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-50%);
+    }
+
+    .barra-baixo-jogo {
+      padding: 8px 10px;
+      background-color: var(--bg-secundario);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      margin-top: auto;
+    }
+
+    /* Modais e Folha de Ordens */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.72);
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 50;
+      padding: 12px;
+    }
+
+    .modal-backdrop.ativo {
+      display: flex;
+    }
+
+    .folha-modal {
+      width: 100%;
+      max-width: 456px;
+      background-color: var(--bg-secundario);
+      border: 1px solid var(--borda);
+      border-radius: 10px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-height: 90dvh;
+      overflow-y: auto;
+    }
+
+    .folha-topo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--borda);
+      padding-bottom: 8px;
+    }
+
+    .folha-titulo {
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .grupo-opcoes {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .rotulo-secao {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--texto-secundario);
+      text-transform: uppercase;
+    }
+
+    .grade-botoes-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+    }
+
+    .grade-botoes-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
+    }
+
+    .btn-opcao.ativo {
+      border-color: var(--acento);
+      background-color: var(--acento);
+      color: var(--acento-texto);
+    }
+
+    /* Resultado pós-ação */
+    .caixa-estrelas-res {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--borda);
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+
+    .item-estrela-res {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .item-estrela-res.ganhou {
+      color: var(--acento);
+    }
+
+    .caixa-licao {
+      background-color: var(--bg-card);
+      border-left: 4px solid var(--acento);
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 0.88rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .barra-replay-eventos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip-evento {
+      min-height: 36px;
+      padding: 4px 8px;
+      font-size: 0.76rem;
+      border-radius: 4px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--borda);
+      cursor: pointer;
+    }
+
+    .chip-evento:hover {
+      border-color: var(--acento);
+    }
+
+    .toast-aviso {
+      position: fixed;
+      bottom: 72px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--bg-elevado);
+      color: var(--texto-principal);
+      border: 2px solid var(--acento);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      z-index: 100;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <!-- TELA 1: MENU DE OPERAÇÕES -->
+    <section id="tela-menu" class="tela ativa" aria-label="Menu Principal">
+      <header class="topo-menu">
+        <div class="topo-linha">
+          <div>
+            <h1 class="marca-jogo">Comandante</h1>
+            <div class="sub-marca">Plano de Jogo · Tática CQB</div>
+          </div>
+          <div style="display:flex; gap:6px;">
+            <button id="btn-som" class="btn" type="button" aria-label="Alternar som">Som: ON</button>
+            <button id="btn-tema" class="btn" type="button" aria-label="Alternar tema claro ou escuro">Tema</button>
+          </div>
+        </div>
+        <div class="painel-patente">
+          <div>
+            <span style="font-size:0.75rem; color:var(--texto-secundario);">PATENTE:</span>
+            <span id="txt-patente" class="patente-badge">Recruta</span>
+          </div>
+          <div class="contadores-estrelas">
+            <span id="txt-total-estrelas" title="Estrelas de campanha">★ 0/108</span>
+            <span id="txt-total-veterano" title="Estrelas de modo veterano">✪ 0</span>
+          </div>
+        </div>
+      </header>
+
+      <div id="box-proxima-missao" class="destaque-proxima">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <span id="prox-tag-novo" class="tag-novo">NOVO: Desenhar rota e ritmo</span>
+          <span id="prox-num" style="font-size:0.8rem; font-weight:700; color:var(--texto-secundario);">Missão 1</span>
+        </div>
+        <div id="prox-titulo" style="font-weight:800; font-size:1.05rem;">1. Primeiro passo</div>
+        <button id="btn-jogar-proxima" class="btn btn-primario" type="button">CONTINUAR CAMPANHA</button>
+      </div>
+
+      <div class="barra-modos-extras">
+        <button id="btn-missao-dia" class="btn" type="button">Missão do Dia</button>
+        <button id="btn-ver-selos" class="btn" type="button">Selos e Conquistas</button>
+      </div>
+
+      <div id="lista-operacoes" class="lista-operacoes"></div>
+    </section>
+
+    <!-- TELA 2: BRIEF DA MISSÃO -->
+    <section id="tela-brief" class="tela" aria-label="Briefing da Missão">
+      <header class="barra-topo-jogo">
+        <button id="btn-brief-voltar" class="btn" type="button">Voltar</button>
+        <div class="info-missao-topo">
+          <div id="brief-op-nome" class="info-missao-sub">OPERAÇÃO 1</div>
+          <h2 id="brief-titulo" class="info-missao-titulo">1. Primeiro passo</h2>
+        </div>
+        <div style="width:44px;"></div>
+      </header>
+
+      <div class="corpo-brief">
+        <div id="brief-faixa-novo" class="tag-novo">NOVO: Desenhar rota e ritmo</div>
+
+        <div id="brief-historia" class="historia-box"></div>
+
+        <div id="brief-fichas" class="grade-fichas"></div>
+
+        <div class="faixa-objetivo">
+          <span id="brief-objetivo-txt">Objetivo: Eliminar todos os hostis</span>
+          <span id="brief-tempo-txt" style="font-family:monospace;">90s</span>
+        </div>
+
+        <div class="faixa-objetivo" style="font-size:0.82rem;">
+          <span id="brief-tatica-txt">3ª Estrela: Neutralizar o primeiro ainda tranquilo</span>
+        </div>
+
+        <div id="brief-box-veterano" class="faixa-objetivo" style="display:none;">
+          <label for="chk-veterano" style="display:flex; align-items:center; gap:8px; cursor:pointer; width:100%;">
+            <input id="chk-veterano" type="checkbox" style="width:20px; height:20px;">
+            <span>Modo Veterano (✪ inimigo 20% mais rápido)</span>
+          </label>
+        </div>
+
+        <div id="brief-seletor-classes" class="seletor-classes-box" style="display:none;"></div>
+
+        <div style="margin-top:auto; display:flex; flex-direction:column; gap:8px;">
+          <button id="btn-ir-planejar" class="btn btn-primario" type="button" style="font-size:1.05rem;">PLANEJAR AÇÃO</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TELA 3: PLANO DE UM AMIGO -->
+    <section id="tela-amigo" class="tela" aria-label="Plano compartilhado">
+      <header class="barra-topo-jogo">
+        <button id="btn-amigo-voltar" class="btn" type="button">Menu</button>
+        <div class="info-missao-topo">
+          <div class="info-missao-sub">PLANO COMPARTILHADO</div>
+          <h2 id="amigo-titulo" class="info-missao-titulo">Plano de um amigo</h2>
+        </div>
+        <div style="width:44px;"></div>
+      </header>
+      <div class="corpo-brief">
+        <div class="historia-box">
+          <p>Você recebeu um plano tático compartilhado por link para esta missão.</p>
+          <p>Deseja assistir à execução imediata ou abrir na mesa de planejamento para editar?</p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:10px; margin-top:auto;">
+          <button id="btn-amigo-executar" class="btn btn-executar" type="button">EXECUTAR PLANO</button>
+          <button id="btn-amigo-editar" class="btn btn-primario" type="button">EDITAR PLANO</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TELA 4: MESA DE PLANEJAMENTO E EXECUÇÃO -->
+    <section id="tela-jogo" class="tela" aria-label="Planejamento e Execução">
+      <header class="barra-topo-jogo">
+        <button id="btn-jogo-voltar" class="btn" type="button">Brief</button>
+        <div class="info-missao-topo">
+          <div id="jogo-titulo" class="info-missao-titulo">1. Primeiro passo</div>
+          <div id="jogo-subtitulo" class="info-missao-sub">Previsto: 0.0s · Toque no chão para traçar rota</div>
+        </div>
+        <button id="btn-jogo-dica" class="btn" type="button" title="Dica tática">Dica</button>
+      </header>
+
+      <div class="palco-mapa">
+        <canvas id="canvas-mapa" width="360" height="480"></canvas>
+        <canvas id="canvas-lupa" width="96" height="96"></canvas>
+      </div>
+
+      <!-- Faixa de Operadores (Planejamento) -->
+      <div id="painel-operadores" class="faixa-operadores-wrap">
+        <div id="barra-equipe-extra" class="controles-equipe" style="display:none;">
+          <div style="display:flex; gap:4px;">
+            <button id="btn-filtro-equipe" class="btn" type="button" style="min-height:36px; padding:4px 8px; font-size:0.76rem;">EQUIPE: TODOS</button>
+          </div>
+          <div style="display:flex; gap:6px; align-items:center;">
+            <label id="lbl-socorrer" style="display:none; align-items:center; gap:4px; cursor:pointer;">
+              <input id="chk-socorrer" type="checkbox"> Socorrer
+            </label>
+            <label id="lbl-seguir" style="display:none; align-items:center; gap:4px;">
+              Seguir:
+              <select id="sel-seguir" style="min-height:32px; padding:2px 4px; background:var(--bg-card); border:1px solid var(--borda); border-radius:4px;"></select>
+            </label>
+          </div>
+        </div>
+        <div id="grade-operadores" class="grade-operadores"></div>
+      </div>
+
+      <!-- Gaveta Linha do Tempo -->
+      <div id="gaveta-timeline" class="gaveta-timeline"></div>
+
+      <!-- Barra Inferior: Modo Planejar -->
+      <footer id="barra-planejar" class="barra-baixo-jogo">
+        <button id="btn-desfazer" class="btn" type="button">DESFAZER</button>
+        <button id="btn-limpar" class="btn" type="button">LIMPAR</button>
+        <button id="btn-timeline" class="btn" type="button">TEMPO</button>
+        <button id="btn-executar" class="btn btn-executar" type="button">EXECUTAR</button>
+      </footer>
+
+      <!-- Barra Inferior: Modo Executar -->
+      <footer id="barra-executar" class="barra-baixo-jogo" style="display:none;">
+        <button id="btn-pausar" class="btn" type="button">PAUSAR</button>
+        <button id="btn-vel-1x" class="btn btn-opcao ativo" type="button">1x</button>
+        <button id="btn-vel-2x" class="btn btn-opcao" type="button">2x</button>
+        <button id="btn-vel-4x" class="btn btn-opcao" type="button">4x</button>
+        <button id="btn-parar" class="btn btn-perigo" type="button">PARAR</button>
+      </footer>
+    </section>
+
+    <!-- MODAL: FOLHA DE ORDENS DO PONTO -->
+    <div id="modal-ordem" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="titulo-modal-ordem">
+      <div class="folha-modal">
+        <div class="folha-topo">
+          <div id="titulo-modal-ordem" class="folha-titulo">Ponto da Rota</div>
+          <button id="btn-fechar-ordem" class="btn" type="button">Fechar</button>
+        </div>
+
+        <div id="bloco-ritmo-ponto" class="grupo-opcoes">
+          <div class="rotulo-secao">Ritmo até este ponto</div>
+          <div class="grade-botoes-3">
+            <button class="btn btn-opcao" type="button" data-ritmo="furtivo">Furtivo</button>
+            <button class="btn btn-opcao" type="button" data-ritmo="andar">Andar</button>
+            <button class="btn btn-opcao" type="button" data-ritmo="correr">Correr</button>
+          </div>
+        </div>
+
+        <div class="grupo-opcoes">
+          <div class="rotulo-secao">Ordem neste ponto</div>
+          <div id="lista-ordens-ponto" class="grade-botoes-2"></div>
+        </div>
+
+        <div id="config-extra-ordem" class="grupo-opcoes" style="display:none;"></div>
+
+        <div style="display:flex; justify-content:space-between; gap:8px; margin-top:4px;">
+          <button id="btn-remover-ponto" class="btn btn-perigo" type="button">Remover Ponto</button>
+          <button id="btn-salvar-ordem" class="btn btn-primario" type="button" style="flex:1;">Confirmar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL: RESULTADO PÓS-AÇÃO -->
+    <div id="modal-resultado" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="titulo-modal-res">
+      <div class="folha-modal">
+        <div class="folha-topo">
+          <div id="titulo-modal-res" class="folha-titulo">Análise Pós-Ação</div>
+          <span id="res-tempo" style="font-family:monospace; font-weight:700;">0.0s</span>
+        </div>
+
+        <div id="res-estrelas-lista" class="caixa-estrelas-res"></div>
+
+        <div class="grupo-opcoes">
+          <div class="rotulo-secao">O que aconteceu (toque para ver o instante no mapa)</div>
+          <input id="slider-replay" type="range" min="0" max="100" value="100" style="width:100%; min-height:32px;" aria-label="Linha do tempo do replay">
+          <div id="res-chips-eventos" class="barra-replay-eventos"></div>
+        </div>
+
+        <div class="caixa-licao">
+          <div style="font-weight:800; font-size:0.8rem; color:var(--acento);">POR QUÊ / DIAGNÓSTICO:</div>
+          <div id="res-por-que"></div>
+          <div style="font-weight:800; font-size:0.8rem; color:var(--aliado); margin-top:4px;">DA PRÓXIMA VEZ (LIÇÃO):</div>
+          <div id="res-licao"></div>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:8px;">
+          <button id="btn-res-ajustar" class="btn" type="button">AJUSTAR PLANO</button>
+          <button id="btn-res-compartilhar" class="btn" type="button">COMPARTILHAR</button>
+        </div>
+        <button id="btn-res-proxima" class="btn btn-primario" type="button">PRÓXIMA MISSÃO</button>
+      </div>
+    </div>
+
+    <!-- MODAL: DICA TÁTICA -->
+    <div id="modal-dica" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="titulo-modal-dica">
+      <div class="folha-modal">
+        <div class="folha-topo">
+          <div id="titulo-modal-dica" class="folha-titulo">Dica do Sargento Rocha</div>
+          <button id="btn-fechar-dica" class="btn" type="button">Fechar</button>
+        </div>
+        <div class="caixa-licao">
+          <div style="font-weight:800; color:var(--acento);">TÁTICA DA MISSÃO:</div>
+          <p id="dica-texto" style="margin-top:4px;"></p>
+        </div>
+        <button id="btn-aplicar-gabarito" class="btn btn-primario" type="button">Carregar Plano Tático Recomendado</button>
+      </div>
+    </div>
+
+    <!-- MODAL: SELOS E CONQUISTAS -->
+    <div id="modal-selos" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="titulo-modal-selos">
+      <div class="folha-modal">
+        <div class="folha-topo">
+          <div id="titulo-modal-selos" class="folha-titulo">Selos e Patentes</div>
+          <button id="btn-fechar-selos" class="btn" type="button">Fechar</button>
+        </div>
+        <div id="lista-selos-modal" class="grupo-opcoes"></div>
+      </div>
+    </div>
+
+    <div id="toast-aviso" class="toast-aviso" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="sim.js"></script>
+  <script src="retratos.js"></script>
+  <script src="missoes.js"></script>
+  <script src="jogo.js"></script>
+</body>
+</html>
